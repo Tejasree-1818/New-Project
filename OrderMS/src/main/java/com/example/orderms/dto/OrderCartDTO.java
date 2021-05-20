@@ -4,7 +4,9 @@ import com.example.orderms.entity.CompPrimaryEntity;
 
 public class OrderCartDTO {
 	private String prodId;
-    
+	private String buyerId;
+    private Integer quantity;
+    private CompPrimaryEntity compPrimaryKey;
 	public String getProdId() {
 		return prodId;
 	}
@@ -29,7 +31,5 @@ public class OrderCartDTO {
 	public void setCompPrimaryKey(CompPrimaryEntity compPrimaryKey) {
 		this.compPrimaryKey = compPrimaryKey;
 	}
-	private String buyerId;
-    private Integer quantity;
-    private CompPrimaryEntity compPrimaryKey;
+	
 }

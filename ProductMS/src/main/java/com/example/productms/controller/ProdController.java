@@ -60,11 +60,11 @@ public class ProdController {
     	}
     	
     }
-    @GetMapping(value="/searchby/productname/{category}")
-    public ResponseEntity<ProdDTO> getProductByName(@PathVariable String name){
+    @GetMapping(value="/searchby/productname/{productName}")
+    public ResponseEntity<ProdDTO> getProductByName(@PathVariable String productName){
     	ProdDTO pD=null;
     	try {
-    		pD=prodService.getProductByName(name);
+    		pD=prodService.getProductByName(productName);
     	}
     	catch(Exception ex) {
     		ex.printStackTrace();
