@@ -2,9 +2,11 @@ package com.example.orderms.dto;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+
 public class OrderDTO {
-	private String orderId;
-	private String buyerId;
+    private String orderId;
+    private String buyerId;
 	private Integer amount;
 	private Date date;
 	public String getOrderId() {
