@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.orderms.dto.OrderCartDTO;
 import com.example.orderms.dto.OrderDTO;
@@ -16,7 +17,7 @@ import com.example.orderms.entity.OrderEntity;
 import com.example.orderms.entity.ProductOrderedEntity;
 import com.example.orderms.repository.OrderRepo;
 import com.example.orderms.repository.ProdOrdRepo;
-
+@Service
 public class OrderServiceImpl implements OrderService
 {
 	 static int v=1000;

@@ -2,13 +2,13 @@ package com.example.orderms.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
+
 
 import com.example.orderms.dto.OrderCartDTO;
 import com.example.orderms.dto.OrderDTO;
 import com.example.orderms.dto.ProdDTO;
 
-@Service
+
 public interface OrderService {
       public String addProductsToCart(OrderDTO orderDTO) throws Exception;
       public String removeProductsFromCart(String prodId) throws Exception;
